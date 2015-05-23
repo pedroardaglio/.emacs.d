@@ -23,7 +23,7 @@
 ;;  q indent-line-function 'insert-tab) ;; Emacs retardado... novamente
 (setq-default tab-width 4) ;; Indentação de 4 espaços
 (setq-default indent-tabs-mode nil) ;; EMACS RETARDADO DA PORRA, EU QUERO DAR TAB QUANDO EU QUISER NESSA MERDA, FDP
-(setq tab-stop-list (number-sequence 4 200 4))
+;; (setq tab-stop-list (number-sequence 4 200 4))
 
 ;; Setando o ambiente para o python
 (push "usr/bin" exec-path)
@@ -34,6 +34,7 @@
          ))
 
 ;; Conf para o melpa
+(add-to-list 'load-path "/home/pedro/.emacs.d")
 (require 'package)
 (add-to-list 'package-archives
 	     '("melpa" . "http://melpa.org/packages/") t)
